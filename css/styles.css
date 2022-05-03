@@ -1,5 +1,3 @@
-/* @import "./_modal-window.css"; */
-
 :root {
   --primary-text-color: #757575;
   --secondary-text-color: #212121;
@@ -24,7 +22,6 @@ body {
   width: 1200px;
   margin: auto;
   margin-top: 0;
-
   padding: 0 15px;
 }
 
@@ -47,31 +44,27 @@ a {
 /*                    КОНЕЦ            * <ОСНОВНЫЕ СТИЛИ> */
 /* логотип */
 
-.logo-nav {
+.logo {
   display: inline-block;
-  margin-right: 93px;
 
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
   line-height: 0.83;
+}
+
+.header__logo {
+  margin-right: 93px;
   color: #000000;
 }
 
-.logo-footer {
-  display: inline-block;
+.footer__logo {
   margin-bottom: 20px;
-
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 0.83;
   color: #ffffff;
 }
 
-.webstudio {
+.logo__web {
   color: #2196f3;
 }
 /* конец логотип */
@@ -83,20 +76,25 @@ a {
   border: 1px solid #ececec;
 }
 
-.flex-header {
+.header__block {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.nav-list {
+.menu {
   display: flex;
   margin: 0;
   margin-right: 305px;
   padding-left: 0;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 
-.nav-item .link::after {
+.menu__list .menu__link::after {
   content: "";
   opacity: 0;
 
@@ -110,42 +108,33 @@ a {
   background-color: #2196f3;
 }
 
-/* .nav-item .link:hover::after {
+.menu__link.accent::after {
   opacity: 1;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-} */
+}
 
-.nav-item .link {
+.menu__link {
   position: relative;
   display: inline-block;
   padding: 32px 0px;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
   color: var(--secondary-text-color);
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.link.accent {
+.menu__link.accent {
   color: var(--accent-color);
 }
 
-.link.accent::after {
-  opacity: 1;
-}
-
-.nav-item .link:hover,
-.nav-item .link:focus {
+.menu__link:hover,
+.menu__link:focus {
   color: var(--accent-color);
 }
 
-.nav-item:not(:last-child) {
+.menu__list:not(:last-child) {
   margin-right: 50px;
 }
 
-.contact-list {
+.header__contact {
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -153,11 +142,11 @@ a {
   padding-left: 0;
 }
 
-.contact-item:not(:last-child) {
+.contact__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.contact-item .link {
+.contact__link {
   display: flex;
   align-items: center;
   padding: 32px 0px;
@@ -166,19 +155,21 @@ a {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #757575;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.icon-header {
+.contact__icon {
   margin-right: 10px;
   fill: currentColor;
 }
 
-.icon-header :not(:last-child) {
+.contact__icon :not(:last-child) {
   margin-right: 10px;
 }
 
-.contact-item .link:hover,
-.contact-item .link:focus {
+.contact__link:hover,
+.contact__link:focus {
   color: var(--accent-color);
 }
 
@@ -187,10 +178,19 @@ a {
 /*                                    mein index.html */
 
 /* герой */
-.button-hero {
+
+.hero {
+}
+
+.button {
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.hero__button {
   width: 200px;
   height: 50px;
-  text-align: center;
 
   font-weight: 700;
   font-size: 16px;
@@ -199,12 +199,9 @@ a {
 
   color: #ffffff;
   background-color: var(--accent-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  border: none;
 }
 
-.hero {
+.section--hero {
   text-align: center;
   background: #2f303a;
   padding: 200px 0px;
@@ -216,7 +213,7 @@ a {
     url(../images/background.jpg);
 }
 
-.hero h1 {
+.hero-title {
   width: 696px;
   margin: auto;
   margin-bottom: 30px;
