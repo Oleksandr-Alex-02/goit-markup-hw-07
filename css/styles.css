@@ -25,15 +25,14 @@ body {
   padding: 0 15px;
 }
 
-button {
-  cursor: pointer;
-}
-
 h1,
 h2,
 h3,
-h4 {
-  margin-top: 0;
+h4,
+ul,
+p {
+  margin: 0;
+  padding: 0;
 }
 
 ul,
@@ -41,6 +40,31 @@ a {
   list-style-type: none;
   text-decoration: none;
 }
+
+.hidden-text {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  clip-path: inset(100%);
+}
+
+.title-h2 {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--secondary-text-color);
+}
+
 /*                    КОНЕЦ            * <ОСНОВНЫЕ СТИЛИ> */
 /* логотип */
 
@@ -178,21 +202,13 @@ a {
 /*                                    mein index.html */
 
 /* герой */
-
-.hero {
-}
-
-.button {
-  border: none;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-}
-
 .button {
   width: 200px;
   height: 50px;
+  border: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .hero__button {
@@ -234,11 +250,23 @@ a {
 
 /* особености нашей команды */
 
-.command-peculiarities {
-  padding: 94px 0px;
+.peculiarities {
+  padding: 94px 0;
 }
 
-.icon-benefits {
+.peculiarities__menu {
+  display: flex;
+  justify-content: center;
+}
+
+.peculiarities__list:not(:last-child) {
+  margin-right: 30px;
+}
+
+.peculiarities__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 270px;
   height: 120px;
   margin-bottom: 30px;
@@ -247,71 +275,50 @@ a {
   border-radius: 4px;
 }
 
-.list-benefits {
-  display: flex;
-  margin: 0;
-  padding-left: 0;
-}
-
-.icon-benefits {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.list-benefits li {
-  width: 270px;
-}
-
-.list-benefits li:not(:last-child) {
-  margin-right: 30px;
-}
-
-.list-benefits h3 {
-  padding: 0;
+.peculiarities__title {
   margin-bottom: 10px;
-}
-
-.list-benefits p {
-  margin: 0;
-}
-
-.command-peculiarities h3 {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #212121;
+}
+
+.peculiarities__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
 
   letter-spacing: 0.03em;
-  color: var(--secondary-text-color);
 }
 /* конец особености нашей команды */
 
 /* чем мы занимается наша команда */
-
-.projects-section {
+.we-do {
   padding-bottom: 94px;
-  text-align: center;
 }
 
-.list-projects {
+.we-do__menu {
   display: flex;
   justify-content: center;
   margin: 0;
   padding-left: 0;
 }
 
-.list-projects li {
+.we-do__list {
   position: relative;
 }
 
-.projects-text {
+.we-do__block {
   position: absolute;
   width: 100%;
   bottom: 7px;
   background: rgba(47, 48, 58, 0.8);
 }
 
-.text-img {
+.we-do__text {
   margin: 0;
   padding: 27px 0px;
   font-weight: 700;
@@ -324,101 +331,44 @@ a {
   color: #ffffff;
 }
 
-.list-projects li:not(:last-child) {
+.we-do__list:not(:last-child) {
   margin-right: 30px;
 }
 
-/*                          h2 */
-
-.projects-section h2,
-.command-section h2,
-.regular-clients h2 {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  margin-bottom: 50px;
-
-  text-align: center;
-
-  letter-spacing: 0.03em;
-  color: var(--secondary-text-color);
+.command__list:not(:last-child) {
+  margin-right: 30px;
 }
 
 /* наша команда */
 
-.command-section {
+.command {
   margin-top: 0;
   padding-top: 94px;
   padding-bottom: 94px;
 
-  text-align: center;
   background: #f5f4fa;
 }
 
-.command-img {
+.command__menu {
   display: flex;
-  justify-content: center;
   margin: 0;
   padding: 0;
 }
 
-.foto {
+.command__list {
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
-.command-blok {
+.command__blok {
   padding-top: 30px;
   padding-bottom: 16px;
   text-align: center;
 }
 
-.social-media {
-  display: flex;
-  margin: auto;
-  width: 206px;
-  padding-left: 0;
-  padding-bottom: 30px;
-}
-
-.social {
-  width: 44px;
-  height: 44px;
-}
-
-.social:not(:last-child) {
-  margin-right: 10px;
-}
-
-.a {
-  width: 44px;
-  height: 44px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  fill: #afb1b8;
-  border-radius: 50%;
-
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.a:hover,
-.a:focus {
-  fill: #ffffff;
-  background: var(--accent-color);
-}
-
-.foto:not(:last-child) {
-  margin-right: 30px;
-}
-
-.command-section h2 {
-  margin-bottom: 50px;
-}
-
-.command-section h3 {
+.command__name {
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
@@ -428,7 +378,7 @@ a {
   color: var(--secondary-text-color);
 }
 
-.command-section p {
+.command__profession {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
@@ -436,6 +386,38 @@ a {
 
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+}
+/*                              social-media */
+
+.social {
+  display: flex;
+  margin: auto;
+  width: 206px;
+  padding-left: 0;
+  padding-bottom: 30px;
+}
+
+.social__menu:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social__link {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: #afb1b8;
+  border-radius: 50%;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social__link:hover,
+.social__link:focus {
+  fill: #ffffff;
+  background: var(--accent-color);
 }
 
 /* Постоянные клиенты */
@@ -454,7 +436,7 @@ a {
 .clients-icon:not(:last-child) {
   margin-right: 30px;
 }
-
+/* ссылка */
 .icon-compan {
   display: flex;
   justify-content: center;
@@ -485,7 +467,7 @@ a {
 
 /*кнопки фильтра*/
 
-.button {
+.filter {
   font-family: "Roboto";
   font-style: normal;
   padding: 6px 22px;
@@ -511,8 +493,8 @@ a {
   margin-right: 8px;
 }
 
-.button:hover,
-.button:focus {
+.filter:hover,
+.filter:focus {
   color: var(--white-color);
   background-color: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
@@ -844,6 +826,8 @@ footer a {
 
 .form-label {
   display: block;
+  margin-bottom: 4px;
+  font-weight: 400;
   font-size: 12px;
   line-height: 1.66;
 
@@ -887,6 +871,15 @@ footer a {
 .form-textarea:hover {
   border: 1px solid #2196f3;
   cursor: pointer;
+}
+
+.form-textarea::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+
+  color: rgba(117, 117, 117, 0.5);
 }
 
 .form-icon {
