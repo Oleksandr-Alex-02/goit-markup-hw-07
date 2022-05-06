@@ -1,4 +1,7 @@
 .button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
     width: 200px;
     height: 50px;
 
@@ -19,7 +22,13 @@
     &-center {
             text-align: center;
         }
+
+                &__send {
+                    margin-left: 10px;
+                    fill: var(--white-color);
+                }
 }
+
 
 .filter {
     font-family: "Roboto";

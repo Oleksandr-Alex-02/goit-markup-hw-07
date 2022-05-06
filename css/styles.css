@@ -1,130 +1,7 @@
-.command {
-  margin-top: 0;
-  padding-top: 94px;
-  padding-bottom: 94px;
-
-  background: #f5f4fa;
-}
-
-.command__menu {
-  display: flex;
-  margin: 0;
-  padding: 0;
-}
-
-.command__list {
-  background: #ffffff;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-}
-
-.command__blok {
-  padding-top: 30px;
-  padding-bottom: 16px;
-  text-align: center;
-}
-
-.command__name {
-  margin-bottom: 10px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.18;
-
-  letter-spacing: 0.03em;
-  color: var(--secondary-text-color);
-}
-
-.command__profession {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.18;
-  margin: 0;
-
-  letter-spacing: 0.03em;
-  color: var(--primary-text-color);
-}
-
-.command__list:not(:last-child) {
-  margin-right: 30px;
-}
-/*                              social-media */
-
-.social {
-  display: flex;
-  margin: auto;
-  width: 206px;
-  padding-left: 0;
-  padding-bottom: 30px;
-}
-
-.social__menu:not(:last-child) {
-  margin-right: 10px;
-}
-
-.social__link {
-  width: 44px;
-  height: 44px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  fill: #afb1b8;
-  border-radius: 50%;
-
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.social__link:hover,
-.social__link:focus {
-  fill: #ffffff;
-  background: var(--accent-color);
-}
-
-/* Постоянные клиенты */
-
-.regular-clients {
-  padding: 94px 0px;
-}
-
-.clients {
-  display: flex;
-  list-style-type: none;
-  margin: 0;
-  padding-left: 0;
-}
-
-.clients-icon:not(:last-child) {
-  margin-right: 30px;
-}
-/* ссылка */
-.icon-compan {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 170px;
-  height: 92px;
-  fill: #afb1b8;
-
-  border: 1px solid #afb1b8;
-  box-sizing: border-box;
-  border-radius: 4px;
-
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.icon-compan:hover,
-.icon-compan:focus {
-  border: 1px solid var(--accent-color);
-  fill: var(--accent-color);
-}
-
 /*                                         mein portfolio.html */
 .portfolio-section {
   padding: 94px 0px;
 }
-/* уникальный контент страницы */
 
 /* нашы проекты */
 
@@ -228,6 +105,12 @@
 /*                                      подвал сайта*/
 
 /* footer */
+/* footer */
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #2f303a;
+}
 
 .address {
   font-style: normal;
@@ -242,15 +125,9 @@
   margin-bottom: 9px;
 }
 
-footer {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  background-color: #2f303a;
-}
-
 /* адрес и контакты студии */
 
-footer a {
+.a {
   text-decoration: none;
 }
 
@@ -266,100 +143,13 @@ footer a {
   display: flex;
   justify-content: space-between;
 }
-
-.social-footer {
+/*                              chgyycffffggf */
+.footer-social-block {
   padding-top: 10px;
   margin-left: 70px;
 }
 
-.social-footer h2 {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-
-  color: #ffffff;
-}
-.icob-footer {
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.1);
-  fill: #ffffff;
-}
-
-/* subscription */
-
-.subscription {
-  margin-left: 93px;
-}
-
-.subscription-titel {
-  margin-bottom: 20px;
-  padding-top: 10px;
-
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-
-  color: #ffffff;
-}
-
-.subscription-footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.input-footer {
-  width: 358px;
-  height: 50px;
-  padding-left: 16px;
-
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  box-sizing: border-box;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  border-radius: 4px;
-  background: #2f303a;
-  color: #ffffff;
-}
-
-.input-footer::placeholder {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
-
-  display: flex;
-  align-items: center;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.button-subscription {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  letter-spacing: 0.06em;
-
-  color: #ffffff;
-  margin-left: 12px;
-  width: 200px;
-  height: 50px;
-  background: #2196f3;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  border: none;
-}
-
-.button-send {
-  margin-left: 10px;
-  fill: var(--white-color);
-}
+/*                        ccc */
 
 /* modal-window */
 
@@ -565,19 +355,6 @@ footer a {
   text-decoration: underline;
   color: var(--accent-color);
 }
-
-/* .is-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-  clip-path: inset(100%);
-} */
 
 .is-hidden {
   visibility: hidden;
