@@ -39,13 +39,13 @@
 }
 
 .form {
-    &__blok {
+    &__bloc {
         margin: 0;
         height: 58px;
         position: relative;
     }
 
-    &__blok--textarea {
+    &__bloc--textarea {
         height: 138px;
     }
 
@@ -101,7 +101,7 @@
         transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    &__blok:not(:last-child) {
+    &__bloc:not(:last-child) {
         margin-bottom: 10px;
     }
 

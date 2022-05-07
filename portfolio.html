@@ -23,7 +23,7 @@
   <body>
     <!-- хедер -->
     <header class="header">
-      <div class="header__block container">
+      <div class="header__bloc container">
         <!-- логотип -->
         <a class="logo header__logo" href="./index.html"
           ><span class="logo__web">Web</span>Studio</a
@@ -68,206 +68,220 @@
     <!-- mein portfolio.html -->
 
     <main>
-      <section class="portfolio-section">
+      <section class="section-portfolio">
         <div class="container">
           <h2 class="hidden-text">Портфолио</h2>
           <!-- кнопки фильтра -->
 
-          <ul class="filter-button">
-            <li><button class="filter" type="button">Все</button></li>
-            <li><button class="filter" type="button">Веб-сайты</button></li>
-            <li><button class="filter" type="button">Приложения</button></li>
-            <li><button class="filter" type="button">Дизайн</button></li>
-            <li><button class="filter" type="button">Маркетинг</button></li>
+          <ul class="filter">
+            <li class="filter__item">
+              <button class="filter__button" type="button">Все</button>
+            </li>
+            <li class="filter__item">
+              <button class="filter__button" type="button">Веб-сайты</button>
+            </li>
+            <li class="filter__item">
+              <button class="filter__button" type="button">Приложения</button>
+            </li>
+            <li class="filter__item">
+              <button class="filter__button" type="button">Дизайн</button>
+            </li>
+            <li class="filter__item">
+              <button class="filter__button" type="button">Маркетинг</button>
+            </li>
           </ul>
           <!-- нашы проекты -->
           <ul class="projects">
-            <li class="projects-li">
-              <a class="projects-link" href="#">
-                <div class="animated-section">
+            <li class="projects__item">
+              <a class="projects__link" href="#">
+                <div class="projects__animated">
                   <img
-                    class="projects-img"
+                    class="projects__img"
                     src="./images/8.web-site.jpg"
                     width="370"
                     alt="Технокряк"
                   />
-                  <p class="text-projects">
+                  <p class="projects__text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
                     исчерпывающие сведения о компании или частном лице.
                   </p>
                 </div>
-                <div class="blok">
-                  <h3>Технокряк</h3>
-                  <p class="projects-p">Веб-сайт</p>
+                <div class="blok-projects">
+                  <h3 class="blok-projects__tetile">Технокряк</h3>
+                  <p class="blok-projects__text">Веб-сайт</p>
                 </div>
               </a>
             </li>
-            <li class="projects-li">
-              <a class="projects-link" href="#">
-                <div class="animated-section">
+            <li class="projects__item">
+              <a class="projects__link" href="#">
+                <div class="projects__animated">
                   <img
-                    class="projects-img"
+                    class="projects__img"
                     src="./images/9.design.jpg"
                     width="370"
                     alt="Постер New Orlean vs Golden Star"
                   />
-                  <p class="text-projects">
+                  <p class="projects__text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
                     исчерпывающие сведения о компании или частном лице.
                   </p>
                 </div>
-                <div class="blok">
-                  <h3>Постер New Orlean vs Golden Star</h3>
-                  <p class="projects-p">Дизайн</p>
+                <div class="blok-projects">
+                  <h3 class="blok-projects__tetile">
+                    Постер New Orlean vs Golden Star
+                  </h3>
+                  <p class="blok-projects__text">Дизайн</p>
                 </div>
               </a>
             </li>
-            <li class="projects-li">
-              <a class="projects-link" href="#">
-                <div class="animated-section">
+            <li class="projects__item">
+              <a class="projects__link" href="#">
+                <div class="projects__animated">
                   <img
-                    class="projects-img"
+                    class="projects__img"
                     src="./images/10.appendix.jpg"
                     width="370"
                     alt="Ресторан Seafood"
                   />
-                  <p class="text-projects">
+                  <p class="projects__text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
                     исчерпывающие сведения о компании или частном лице.
                   </p>
                 </div>
-                <div class="blok">
-                  <h3>Ресторан Seafood</h3>
-                  <p class="projects-p">Приложение</p>
+                <div class="blok-projects">
+                  <h3 class="blok-projects__tetile">Ресторан Seafood</h3>
+                  <p class="blok-projects__text">Приложение</p>
                 </div>
               </a>
             </li>
-            <li class="projects-li">
-              <a class="projects-link" href="#">
-                <div class="animated-section">
+            <li class="projects__item">
+              <a class="projects__link" href="#">
+                <div class="projects__animated">
                   <img
-                    class="projects-img"
+                    class="projects__img"
                     src="./images/11.marketing.jpg"
                     width="370"
                     alt="Проект Prime"
                   />
-                  <p class="text-projects">
+                  <p class="projects__text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
                     исчерпывающие сведения о компании или частном лице.
                   </p>
                 </div>
-                <div class="blok">
-                  <h3>Проект Prime</h3>
-                  <p class="projects-p">Маркетинг</p>
+                <div class="blok-projects">
+                  <h3 class="blok-projects__tetile">Проект Prime</h3>
+                  <p class="blok-projects__text">Маркетинг</p>
                 </div>
               </a>
             </li>
-            <li class="projects-li">
-              <a class="projects-link" href="#">
-                <div class="animated-section">
+            <li class="projects__item">
+              <a class="projects__link" href="#">
+                <div class="projects__animated">
                   <img
-                    class="projects-img"
+                    class="projects__img"
                     src="./images/12.appendix.jpg"
                     width="370"
                     alt="Проект Boxes"
                   />
-                  <p class="text-projects">
+                  <p class="projects__text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
                     исчерпывающие сведения о компании или частном лице.
                   </p>
                 </div>
-                <div class="blok">
-                  <h3>Проект Boxes</h3>
-                  <p class="projects-p">Приложение</p>
+                <div class="blok-projects">
+                  <h3 class="blok-projects__tetile">Проект Boxes</h3>
+                  <p class="blok-projects__text">Приложение</p>
                 </div>
               </a>
             </li>
-            <li class="projects-li">
-              <a class="projects-link" href="#">
-                <div class="animated-section">
+            <li class="projects__item">
+              <a class="projects__link" href="#">
+                <div class="projects__animated">
                   <img
-                    class="projects-img"
+                    class="projects__img"
                     src="./images/13.web-site.jpg"
                     width="370"
                     alt="Inspiration has no Borders"
                   />
-                  <p class="text-projects">
+                  <p class="projects__text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
                     исчерпывающие сведения о компании или частном лице.
                   </p>
                 </div>
-                <div class="blok">
-                  <h3>Inspiration has no Borders</h3>
-                  <p class="projects-p">Веб-сайт</p>
+                <div class="blok-projects">
+                  <h3 class="blok-projects__tetile">
+                    Inspiration has no Borders
+                  </h3>
+                  <p class="blok-projects__text">Веб-сайт</p>
                 </div>
               </a>
             </li>
-            <li class="projects-li">
-              <a class="projects-link" href="#">
-                <div class="animated-section">
+            <li class="projects__item">
+              <a class="projects__link" href="#">
+                <div class="projects__animated">
                   <img
-                    class="projects-img"
+                    class="projects__img"
                     src="./images/14.design.jpg"
                     width="370"
                     alt="Издание Limited Edition"
                   />
-                  <p class="text-projects">
+                  <p class="projects__text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
                     исчерпывающие сведения о компании или частном лице.
                   </p>
                 </div>
-                <div class="blok">
-                  <h3>Издание Limited Edition</h3>
-                  <p class="projects-p">Дизайн</p>
+                <div class="blok-projects">
+                  <h3 class="blok-projects__tetile">Издание Limited Edition</h3>
+                  <p class="blok-projects__text">Дизайн</p>
                 </div>
               </a>
             </li>
-            <li class="projects-li">
-              <a class="projects-link" href="#">
-                <div class="animated-section">
+            <li class="projects__item">
+              <a class="projects__link" href="#">
+                <div class="projects__animated">
                   <img
-                    class="projects-img"
+                    class="projects__img"
                     src="./images/15.marketing.jpg"
                     width="370"
                     alt="Проект LAB"
                   />
-                  <p class="text-projects">
+                  <p class="projects__text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
                     исчерпывающие сведения о компании или частном лице.
                   </p>
                 </div>
-                <div class="blok">
-                  <h3>Проект LAB</h3>
-                  <p class="projects-p">Маркетинг</p>
+                <div class="blok-projects">
+                  <h3 class="blok-projects__tetile">Проект LAB</h3>
+                  <p class="blok-projects__text">Маркетинг</p>
                 </div>
               </a>
             </li>
-            <li class="projects-li">
-              <a class="projects-link" href="#">
-                <div class="animated-section">
+            <li class="projects__item">
+              <a class="projects__link" href="#">
+                <div class="projects__animated">
                   <img
-                    class="projects-img"
+                    class="projects__img"
                     src="./images/16.appendix.jpg"
                     width="370"
                     alt="Growing Business"
                   />
-                  <p class="text-projects">
+                  <p class="projects__text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
                     исчерпывающие сведения о компании или частном лице.
                   </p>
                 </div>
-                <div class="blok">
-                  <h3>Growing Business</h3>
-                  <p class="projects-p">Приложение</p>
+                <div class="blok-projects">
+                  <h3 class="blok-projects__tetile">Growing Business</h3>
+                  <p class="blok-projects__text">Приложение</p>
                 </div>
               </a>
             </li>
