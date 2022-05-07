@@ -1,3 +1,44 @@
+.footer {
+    padding: 60px 0px;
+    background-color: #2f303a;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+        &__address {
+            margin-right: 70px;
+        }
+
+                &__social {
+                    margin-right: 93px;
+                    padding-top: 10px;
+                }
+}
+
+.address {
+    font-style: normal;
+
+    &__menu {
+        margin: 0;
+        padding-left: 0;
+    }
+
+    &__item:not(:last-child) {
+        margin-bottom: 9px;
+    }
+
+    &__link {
+        color: #ffffff;
+    }
+
+    &__contakt {
+        color: rgba(255, 255, 255, 0.6);
+    }
+
+}
+
 .footer-title {
     margin-bottom: 20px;
     padding-top: 10px;
@@ -12,9 +53,7 @@
 }
 
 .subscription {
-    margin-left: 93px;
-
-
+    padding-top: 10px;
 
     &__block {
         display: flex;

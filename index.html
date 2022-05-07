@@ -418,33 +418,33 @@
     <!--подвал сайта-->
 
     <footer class="footer">
-      <div class="container">
-        <div>
+      <div class="container footer__container">
+        <div class="footer__address">
           <a href="./index.html" class="logo footer__logo">
             <span class="logo__web">Web</span>Studio</a
           >
           <!-- адрес и контакты студии -->
           <address class="address">
             <ul class="address__menu">
-              <li>
-                <a href="#" class="address-link"
+              <li class="address__item">
+                <a href="#" class="address__link"
                   >г. Киев, пр-т Леси Украинки, 26</a
                 >
               </li>
-              <li>
-                <a href="http://info@example.com" class="address-contakt">
+              <li class="address__item">
+                <a href="http://info@example.com" class="address__contakt">
                   info@example.com</a
                 >
               </li>
-              <li>
-                <a href="tel:+380991111111" class="address-contakt"
+              <li class="address__item">
+                <a href="tel:+380991111111" class="address__contakt"
                   >+38 099 111 11 11</a
                 >
               </li>
             </ul>
           </address>
         </div>
-        <div class="footer-social-block">
+        <div class="footer__social">
           <h2 class="footer-title">присоединяйтесь</h2>
           <ul class="social">
             <li class="social__menu">
@@ -503,14 +503,14 @@
 
     <!-- modal-window -->
 
-    <div class="modal-section is-hidden" data-modal>
-      <div class="modal-window">
-        <button type="button" class="button-modal" data-modal-close>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="backdrop__window">
+        <button class="button button__modal" type="button" data-modal-close>
           <svg class="close" width="18" height="18" data-modal-close>
             <use href="./images/icons.svg#close"></use>
           </svg>
         </button>
-        <h2 class="form-titel">Оставьте свои данные, мы вам перезвоним</h2>
+        <h2 class="backdrop__titel">Оставьте свои данные, мы вам перезвоним</h2>
 
         <form class="form">
           <div class="form__blok" role="group">
