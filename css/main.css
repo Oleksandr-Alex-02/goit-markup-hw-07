@@ -428,6 +428,10 @@ body {
 .social__menu:not(:last-child) {
   margin-right: 10px;
 }
+.social__link--footer {
+  fill: #ffffff;
+  background: rgba(255, 255, 255, 0.1);
+}
 
 .regu-clients {
   padding: 94px 0px;
